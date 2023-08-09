@@ -1,22 +1,33 @@
 class Solution {
     public int firstMissingPositive(int[] nums) {
         int n = nums.length;
-        for(int i = 0;i<nums.length;i++){
-            if (nums[i] <= 0 || nums[i] > n) {
-                nums[i] = n + 1;
+        boolean one = false;
+
+        // 1. Map the elements which are out of range by 1.
+        for(int i = 0;i<n;i++){
+            if( nums[i] < 1 || nums[i] > n){
+                nums[i] = 1;
+            }
+            else if(nums[i] == 1){
+                one = true;
             }
         }
 
-        for (int i = 0; i < n; i++) {
-            int num = Math.abs(nums[i]);
-            if (num <= n) {
-                nums[num - 1] = -Math.abs(nums[num - 1]);
-            }
+        // 2. Check if 1 is present or not
+        if(!one){
+            return 1;
+        }
+       
+        // 3. Change the 1s by their negative
+        for(int i = 0;i<n;i++){
+            int index = Math.abs(nums[i]);
+            nums[index - 1] = -Math.abs(nums[index - 1]);
         }
 
-        for (int i = 0; i < n; i++) {
-            if (nums[i] > 0) {
-                return i + 1;
+        // 4. Check for first positive
+        for(int i = 0;i<n;i++){
+            if(nums[i] > 0){
+                return i+1;
             }
         }
 
