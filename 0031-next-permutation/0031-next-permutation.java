@@ -1,42 +1,47 @@
 class Solution {
-    private static void reverse(int start,int end,int[] nums){
-        while(start<end){
-            int temp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = temp;
-            start++;
-            end--;
+    public static void reverse(int s,int e,int[] nums){
+        while(s<=e){
+            int temp = nums[s];
+            nums[s] = nums[e];
+            nums[e] = temp;
+            s++;
+            e--;
         }
     }
     public void nextPermutation(int[] nums) {
-        int p = 0;
-        for(int i = nums.length - 2;i>=0;i--){
-            if(nums[i] < nums[i+1]){
-                p = i;
+        int n = nums.length; // size of the array.
+
+        // Step 1: Find the break point:
+        int ind = -1; // break point
+        for (int i = n - 2; i >= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
+                // index i is the break point
+                ind = i;
                 break;
             }
         }
-        System.out.println(p);
 
-        int q = 0;
+        // If break point does not exist:
+        if (ind == -1) {
+            // reverse the whole array
+            reverse(0, n - 1, nums);
+        } 
 
-        for(int i = nums.length - 1;i>=0;i--){
-            if(nums[p] < nums[i]){
-                q = i;
-                break;
+        else {
+            // Step 2: Find the next greater element
+            //         and swap it with nums[ind]
+            for (int i = n - 1; i > ind; i--) {
+                if (nums[i] > nums[ind]) {
+                    int temp = nums[i];
+                    nums[i] = nums[ind];
+                    nums[ind] = temp;
+                    break;
+                }
             }
-        }
-        System.out.println(q);
 
-        if(p == q){
-            reverse(0,nums.length - 1,nums);
-            return;
+            // Step 3: reverse the right half:
+            reverse(ind + 1, n - 1, nums);
         }
-
-        int t = nums[p];
-        nums[p] = nums[q];
-        nums[q] = t;
-        reverse(p+1,nums.length-1,nums);
-        System.out.println(Arrays.toString(nums));
     }
 }
+
