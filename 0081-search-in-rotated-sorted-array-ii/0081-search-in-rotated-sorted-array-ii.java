@@ -1,27 +1,43 @@
 class Solution {
     public boolean search(int[] nums, int target) {
         int n = nums.length;
-        Arrays.sort(nums);
-        
-        int s = 0;
-        int e = n-1;
 
-        while(s<=e){
-            int mid = s + (e - s)/2;
+        int low = 0;
+        int high = n-1;
 
+        while(low <= high){
+            int mid = low + (high-low)/2;
             if(nums[mid] == target){
                 return true;
             }
 
-            else if(target > nums[mid]){
-                s = mid + 1;
+            // check if low, mid and high are equal
+            else if(nums[low] == nums[mid] && nums[mid] == nums[high]){
+                low++;
+                high--;
+                continue;
             }
 
+            // left sorted
+            else if(nums[low] <= nums[mid]){
+                if(nums[low] <= target && target <= nums[mid]){
+                    high = mid - 1;
+                }
+                else{
+                    low = mid + 1;
+                }
+            }
+
+            // right sorted
             else{
-                e = mid - 1;
+                if(nums[high] >= target && target >= nums[mid]){
+                    low = mid + 1;
+                }
+                else{
+                    high = mid - 1;
+                }
             }
         }
-
         return false;
     }
 }
