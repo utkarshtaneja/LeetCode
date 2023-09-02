@@ -1,10 +1,10 @@
 class Solution {
-    public static int findDays(int[] weights,int cap){
+    public static int findDays(int[] weights,int capacity){
         int days = 1; 
         int load = 0;
         int n = weights.length; 
         for (int i = 0; i < n; i++) {
-            if (load + weights[i] > cap) {
+            if (load + weights[i] > capacity) {
                 days++; 
                 load = weights[i]; 
             } 
@@ -18,8 +18,8 @@ class Solution {
         int low = 0;
         int high = 0;
         for (int i = 0; i < weights.length; i++) {
-            high = high + weights[i];// summation
-            low = Math.max(low, weights[i]);// max value
+            high = high + weights[i];   // summation
+            low = Math.max(low, weights[i]);    // max value
         }
 
         // Range = (maxValue , summation)
