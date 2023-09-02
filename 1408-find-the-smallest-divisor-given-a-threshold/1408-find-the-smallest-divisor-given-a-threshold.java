@@ -9,7 +9,7 @@ class Solution {
     public static boolean isPossible(int[] nums,int divisor,int threshold){
         long sum = 0;
         for (int i = 0; i < nums.length; i++) {
-            sum += Math.ceil((double) nums[i] / divisor);
+            sum += Math.ceil((double) nums[i] / (double)divisor);
         }
         return sum <= threshold;
     }
