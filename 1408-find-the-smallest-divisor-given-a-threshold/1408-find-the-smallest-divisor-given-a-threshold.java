@@ -1,4 +1,11 @@
 class Solution {
+    public static int findmax(int[] nums){
+        int max = 0;
+        for(int i = 0;i<nums.length;i++){
+            max = Math.max(max,nums[i]);
+        }
+        return max;
+    }
     public static boolean isPossible(int[] nums,int divisor,int threshold){
         long sum = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -9,7 +16,7 @@ class Solution {
     public int smallestDivisor(int[] nums, int threshold) {
 
         int low = 1;
-        int high = Integer.MAX_VALUE;
+        int high = findmax(nums);
 
         while(low <= high){
             int mid = low + (high - low) / 2;
