@@ -2,46 +2,46 @@ class Solution {
     public int romanToInt(String s) {
         int ans = 0;
         int n = s.length();
-        
-        for (int i = 0; i < n; i++) {
+        int prevValue = 0;
+
+        for (int i = n - 1; i >= 0; i--) {
             char ch = s.charAt(i);
-            if (ch == 'I') {
-                if (i + 1 < n && ( s.charAt(i+1) == 'V' || s.charAt(i+1) == 'X')) {
-                    ans -= 1;
-                } 
-                else {
-                    ans += 1;
-                }
-            } 
-            else if (ch == 'V') {
-                ans += 5;
-            } 
-            else if (ch == 'X') {
-                if (i + 1 < n && ( s.charAt(i+1) == 'L' || s.charAt(i+1) == 'C')) {
-                    ans -= 10;  
-                } 
-                else {
-                    ans += 10;
-                }   
-            } 
-            else if (ch == 'L') {
-                ans += 50;
-            } 
-            else if (ch == 'C') {
-                if (i + 1 < n && ( s.charAt(i+1) == 'D' || s.charAt(i+1) == 'M')) {
-                    ans -= 100;  
-                } 
-                else {
-                    ans += 100;
-                }
-            } 
-            else if (ch == 'D') {
-                ans += 500;
-            } 
-            else if (ch == 'M') {
-                ans += 1000;
+            int currentValue = 0;
+
+            switch (ch) {
+                case 'I':
+                    currentValue = 1;
+                    break;
+                case 'V':
+                    currentValue = 5;
+                    break;
+                case 'X':
+                    currentValue = 10;
+                    break;
+                case 'L':
+                    currentValue = 50;
+                    break;
+                case 'C':
+                    currentValue = 100;
+                    break;
+                case 'D':
+                    currentValue = 500;
+                    break;
+                case 'M':
+                    currentValue = 1000;
+                    break;
             }
+
+            if (currentValue < prevValue) {
+                ans -= currentValue;
+            } 
+            else {
+                ans += currentValue;
+            }
+
+            prevValue = currentValue;
         }
+
         return ans;
     }
 }
