@@ -4,7 +4,7 @@ class Solution {
         int n = s.length();
         int prevValue = 0;
 
-        for (int i = n - 1; i >= 0; i--) {
+        for(int i = n - 1; i >= 0; i--) {
             char ch = s.charAt(i);
             int currentValue = 0;
 
