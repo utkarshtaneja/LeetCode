@@ -34,11 +34,11 @@ class Solution {
             return 0; 
         }
 
-        try {
+        try{
             int ans = Integer.parseInt(temp);
             return ans * sign;
         }
-        catch (NumberFormatException e) {
+        catch(NumberFormatException e) {
             return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         }
     }
