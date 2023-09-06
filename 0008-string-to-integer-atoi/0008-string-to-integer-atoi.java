@@ -1,45 +1,40 @@
 class Solution {
     public int myAtoi(String s) {
-        s = s.trim();
-        int n = s.length();
-        if(n == 0) {
+        if(s == null){
             return 0;
         }
 
-        String temp = "";
-        int sign = 1;
-
-        int index = 0;
-        if(s.charAt(0) == '-' || s.charAt(0) == '+'){
-            if(s.charAt(0) == '-'){
-                sign = -1;
+        s = s.trim();
+        if(s.length() == 0){
+            return 0;
+        }
+        
+        int sign = +1;
+        long ans = 0;
+        if(s.charAt(0) == '-'){
+            sign = -1;
+        }
+        
+        int MAX = Integer.MAX_VALUE;
+        int MIN = Integer.MIN_VALUE;
+        int i = (s.charAt(0) == '+' || s.charAt(0) == '-') ? 1 : 0;
+		
+        while(i < s.length()) {
+            if(s.charAt(i) == ' ' || !Character.isDigit(s.charAt(i)) ){
+                break;
             }
-            else{
-                sign = 1;
+            ans = ans * 10 + s.charAt(i) - '0';
+            // check the conditions
+            if(sign == -1 && -1 * ans < MIN){
+                return MIN;
             }
-            index++;
-        }
-
-        for (int i = index; i < n; i++) {
-            char ch = s.charAt(i);
-            if(Character.isDigit(ch)) {
-                temp = temp + ch;
-            } 
-            else{
-                break; 
+            if(sign == 1 && ans > MAX){
+                return MAX;
             }
+            
+            i++;
         }
-
-        if (temp.isEmpty()) {
-            return 0; 
-        }
-
-        try{
-            int ans = Integer.parseInt(temp);
-            return ans * sign;
-        }
-        catch(NumberFormatException e) {
-            return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
-        }
+        
+        return (int)(sign*ans);
     }
 }
