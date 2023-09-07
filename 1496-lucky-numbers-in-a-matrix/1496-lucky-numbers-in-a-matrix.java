@@ -2,20 +2,17 @@ class Solution {
     public List<Integer> luckyNumbers (int[][] matrix) {
         int row = matrix.length;
         int col = matrix[0].length;
-        
         List<Integer> luckyNumbers = new ArrayList<>();
         
         for(int i = 0; i < row; i++) {
             int minInRow = Integer.MAX_VALUE;
             int minColIndex = -1;
-            
             for(int j = 0; j < col; j++) {
                 if (matrix[i][j] < minInRow) {
                     minInRow = matrix[i][j];
                     minColIndex = j;
                 }
             }
-            
             boolean isMaxInCol = true;
             for(int k = 0; k < row; k++) {
                 if(matrix[k][minColIndex] > minInRow) {
@@ -23,12 +20,10 @@ class Solution {
                     break;
                 }
             }
-            
             if(isMaxInCol) {
                 luckyNumbers.add(minInRow);
             }
         }
-        
         return luckyNumbers;
     }
 }
