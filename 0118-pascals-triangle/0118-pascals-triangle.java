@@ -21,6 +21,10 @@ class Solution{
         return list;
     }
 }
+
+
+// Brute Force Method
+
 // class Solution {
 //     public static int nCr(int n,int r){
 //         int result = 1;
