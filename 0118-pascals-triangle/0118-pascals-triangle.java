@@ -8,9 +8,7 @@ class Solution {
         return result;
     }
     public List<List<Integer>> generate(int numRows) {
-        // BRUTE FORCE METHOD
         List<List<Integer>> list = new ArrayList<>();
-
         int result = 1;
         for(int i = 0;i<numRows;i++){
             List<Integer> row = new ArrayList<>();
