@@ -10,24 +10,24 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        // Iterative
-        ListNode newHead = null;
-        while(head != null){
-            ListNode nxt = head.next;
-            head.next = newHead;
-            newHead = head;
-            head = nxt;
-        }
-        return newHead;
-        
-        // Recursive
-        // if(head == null || head.next == null){
-        //     return head;
+        // Iterative Method
+        // ListNode newHead = null;
+        // while(head != null){
+        //     ListNode nxt = head.next;
+        //     head.next = newHead;
+        //     newHead = head;
+        //     head = nxt;
         // }
-
-        // ListNode newHead = reverseList(head.next);
-        // head.next.next = head;
-        // head.next = null;
         // return newHead;
+
+        // Recursive Method
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        ListNode newHead = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
     }
 }
