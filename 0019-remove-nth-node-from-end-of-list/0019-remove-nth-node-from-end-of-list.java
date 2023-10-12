@@ -26,16 +26,13 @@ class Solution {
             return head.next;
         }
         else{
-            int positionToRemove = size - n;
-            ListNode dummy = new ListNode(0);
-            dummy.next = head;
-            ListNode prev = dummy;
-            
+            int positionToRemove = size - n - 1;
+            ListNode temp = head;
             for(int i = 0; i<positionToRemove; i++) {
-                prev = prev.next;
+                temp = temp.next;
             }
-            prev.next = prev.next.next;
-            return dummy.next;
+            temp.next = temp.next.next;
+            return head;
         }
     }
 }
