@@ -12,10 +12,10 @@ class Solution {
     private static int first(int[] nums,int target){
         int s = 0;
         int e = nums.length - 1;
-        int mid = s + (e - s) / 2;
         int result = -1;
 
         while(s<=e){
+            int mid = s + (e - s) / 2;
             if(nums[mid] == target){
                 result = mid;
                 e = mid - 1;
@@ -26,7 +26,6 @@ class Solution {
             else if(nums[mid] > target){
                 e = mid - 1;
             }
-            mid = s + (e - s) / 2;
         }
 
         return result;
@@ -35,10 +34,10 @@ class Solution {
     private static int last(int[] nums,int target){
         int s = 0;
         int e = nums.length - 1;
-        int mid = s + (e - s) / 2;
         int result = -1;
 
         while(s<=e){
+            int mid = s + (e - s) / 2;
             if(nums[mid] == target){
                 result = mid;
                 s = mid + 1;
@@ -49,7 +48,6 @@ class Solution {
             else if(nums[mid] > target){
                 e = mid - 1;
             }
-            mid = s + (e - s) / 2;
         }
 
         return result;
