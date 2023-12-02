@@ -10,14 +10,12 @@ class Solution {
             if(nums[mid] == target){
                 return true;
             }
-
             // check if low, mid and high are equal
             else if(nums[low] == nums[mid] && nums[mid] == nums[high]){
                 low++;
                 high--;
                 continue;
             }
-
             // left sorted
             else if(nums[low] <= nums[mid]){
                 if(nums[low] <= target && target <= nums[mid]){
@@ -27,7 +25,6 @@ class Solution {
                     low = mid + 1;
                 }
             }
-
             // right sorted
             else{
                 if(nums[high] >= target && target >= nums[mid]){
