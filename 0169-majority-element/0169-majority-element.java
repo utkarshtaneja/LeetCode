@@ -1,29 +1,5 @@
 class Solution {
     public int majorityElement(int[] nums) {
-        // Brute Force 
-//         int count = 1;
-//         int candidate = nums[0];
-//         int n = nums.length;
-//         for(int i = 1; i < nums.length; i++) {
-//             if(nums[i] == candidate) {
-//                 count++;
-//             } 
-//             else {
-//                 count--;
-//                 if(count == 0) {
-//                     candidate = nums[i];
-//                     count = 1;
-//                 }
-//             }
-//         }
-//         count = 0;
-//         for(int num : nums) {
-//             if(num == candidate) {
-//                 count++;
-//             }
-//         }
-
-//         return count > n / 2 ? candidate : -1;
         // Optimal Approach
         HashMap<Integer,Integer> map = new HashMap<>();
         int n = nums.length;
