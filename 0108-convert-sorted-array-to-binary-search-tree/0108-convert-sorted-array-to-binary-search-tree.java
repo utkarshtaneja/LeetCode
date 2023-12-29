@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    public static TreeNode sortedArrayToBSTHelper(int[] nums, int start, int end){
+    public static TreeNode BSTHelper(int[] nums, int start, int end){
        if(start > end) {
             return null;
         }
@@ -22,8 +22,8 @@ class Solution {
         int mid = start + (end - start) / 2;
         TreeNode root = new TreeNode(nums[mid]);
 
-        root.left = sortedArrayToBSTHelper(nums, start, mid - 1);
-        root.right = sortedArrayToBSTHelper(nums, mid + 1, end);
+        root.left = BSTHelper(nums, start, mid - 1);
+        root.right = BSTHelper(nums, mid + 1, end);
 
         return root;
     }
@@ -32,6 +32,6 @@ class Solution {
             return null;
         }
 
-        return sortedArrayToBSTHelper(nums, 0, nums.length - 1);
+        return BSTHelper(nums, 0, nums.length - 1);
     }
 }
