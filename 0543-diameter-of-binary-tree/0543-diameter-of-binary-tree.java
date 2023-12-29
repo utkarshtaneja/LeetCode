@@ -26,7 +26,7 @@ class Solution {
         int Ls = diameterOfBinaryTree(root.left);
         int Rs = diameterOfBinaryTree(root.right);
         int diam = height(root.left) + height(root.right) ;
-        int ans = Math.max(Ls,Rs);
-        return Math.max(ans,diam);
+        int ans = Math.max(diam,Math.max(Ls,Rs));
+        return ans;
     }
 }
