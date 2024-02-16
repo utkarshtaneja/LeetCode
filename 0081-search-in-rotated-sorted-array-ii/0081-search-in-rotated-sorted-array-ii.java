@@ -1,22 +1,21 @@
 class Solution {
     public boolean search(int[] nums, int target) {
         int n = nums.length;
-
         int low = 0;
-        int high = n-1;
-
+        int high =  n - 1;
+        
         while(low <= high){
-            int mid = low + (high-low)/2;
+            int mid = low + (high - low) / 2;
             if(nums[mid] == target){
                 return true;
             }
-            // check if low, mid and high are equal
+            // check if low, mid & high are equal
             else if(nums[low] == nums[mid] && nums[mid] == nums[high]){
                 low++;
                 high--;
                 continue;
             }
-            // left sorted
+            // check if left is sorted
             else if(nums[low] <= nums[mid]){
                 if(nums[low] <= target && target <= nums[mid]){
                     high = mid - 1;
@@ -25,7 +24,7 @@ class Solution {
                     low = mid + 1;
                 }
             }
-            // right sorted
+            // check if right is sorted
             else{
                 if(nums[high] >= target && target >= nums[mid]){
                     low = mid + 1;
