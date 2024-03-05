@@ -9,7 +9,7 @@ class Solution {
             if(nums[mid] == target){
                 return mid;
             }
-
+            // Identigy sorted half
             if(nums[low] <= nums[mid]){
                 if(nums[low] <= target && target <= nums[mid]){
                     high = mid - 1;
