@@ -1,38 +1,45 @@
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        // for(int i = 0;i<n;i++){
-        //     nums1[m+i] = nums2[i];
+        // Brute Force
+        // ArrayList<Integer> list = new ArrayList<>();
+        // for(int i = 0;i < m;i++){
+        //     if(nums1[i] != 0){
+        //         list.add(nums1[i]);
+        //     }
         // }
-        // Arrays.sort(nums1);
-
-        // OPTIMAL SOLUTION
-        int i = m - 1; 
-        int j = n - 1; 
-        int k = m + n - 1; 
+        // for(int i = 0;i < n;i++){
+        //     list.add(nums2[i]);
+        // }
+        // Collections.sort(list);
+        // for(int i = 0;i < list.size();i++){
+        //     nums1[i] = list.get(i);
+        // }
         
-        while (i >= 0 && j >= 0) {
-            if (nums1[i] > nums2[j]) {
-                nums1[k] = nums1[i];
-                i--;
-                k--;
+        // Optimal
+        int[] merged = new int[m + n];
+        int i = 0;
+        int j = 0;
+        int k = 0;
+    
+        while (i < m && j < n) {
+            if (nums1[i] <= nums2[j]) {
+                merged[k++] = nums1[i++];
             } 
             else {
-                nums1[k] = nums2[j];
-                j--;
-                k--;
+                merged[k++] = nums2[j++];
             }
         }
-        
-        while (i >= 0) {
-            nums1[k] = nums1[i];
-            i--;
-            k--;
+    
+        while (i < m) {
+            merged[k++] = nums1[i++];
         }
-        
-        while (j >= 0) {
-            nums1[k] = nums2[j];
-            j--;
-            k--;
+    
+        while (j < n) {
+            merged[k++] = nums2[j++];
+        }
+
+        for (int p = 0; p < m + n; p++) {
+            nums1[p] = merged[p];
         }
     }
 }
