@@ -14,22 +14,21 @@
  * }
  */
 class Solution {
-    public static ArrayList<Integer> Inorder(TreeNode root, ArrayList<Integer> list){
+    public static ArrayList<Integer> inorder(TreeNode root, ArrayList<Integer> list){
         if(root == null){
             return list;
         }
-        Inorder(root.left, list);
+        inorder(root.left, list);
         list.add(root.val);
-        Inorder(root.right, list);
+        inorder(root.right, list);
         return list;
     }
-    
     public int kthSmallest(TreeNode root, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         ArrayList<Integer> list = new ArrayList<>();
-        Inorder(root, list);
+        inorder(root, list);
         
-        for(int i = 0;i < list.size();i++){
+        for(int i = 0 ;i < list.size();i++){
             minHeap.add(list.get(i));
         }
         
