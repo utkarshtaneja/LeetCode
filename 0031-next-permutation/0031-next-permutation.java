@@ -18,11 +18,12 @@ class Solution {
                 break;
             }
         }
+        
         if(index == -1){
-            reverse(0, n-1, nums);
+            reverse(0, n - 1, nums);
         }
         else{
-            for(int i= n - 1;i > index;i--){
+            for(int i = n - 1;i > index;i--){
                 if(nums[i] > nums[index]){
                     int temp = nums[i];
                     nums[i] = nums[index];
