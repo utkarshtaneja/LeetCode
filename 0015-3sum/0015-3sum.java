@@ -44,9 +44,8 @@ class Solution {
         int n = nums.length;
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
-        
-        for(int i = 0;i < n -2;i++){
-            if(i == 0 || (i > 0 && nums[i] != nums[i-1])){
+        for(int i = 0;i < n-2;i++){
+            if(i == 0 || (i > 0 && nums[i] != nums[i - 1])){
                 int s = i + 1;
                 int e = n - 1;
                 
@@ -55,12 +54,13 @@ class Solution {
                     if(sum == 0){
                         ans.add(Arrays.asList(nums[i], nums[s], nums[e]));
                         
-                        while(s < e && nums[s] == nums[s+1]) s++;
-                        while(s < e && nums[e] == nums[e-1]) e--;
+                        while(s < e && nums[s] == nums[s + 1]) s++;
+                        while(s < e && nums[e] == nums[e - 1]) e--;
                         
                         s++;
                         e--;
                     }
+                    
                     else if(sum < 0){
                         s++;
                     }
