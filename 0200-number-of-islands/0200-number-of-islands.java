@@ -1,15 +1,5 @@
 class Solution {
-    static class Pair{
-        int first;
-        int second;
-        
-        public Pair(int first,int second){
-            this.first = first;
-            this.second = second;
-        }
-    }
     public static void dfs(int row, int col, int[][] vis, char[][] grid){
-        vis[row][col] = 1;
         int[] drow = { -1, 0, 1, 0 }; 
         int[] dcol = { 0, 1, 0, -1 }; 
         vis[row][col] = 1;
@@ -28,8 +18,8 @@ class Solution {
         int n = grid.length;
         int m = grid[0].length;
         
-        int count = 0;
         int[][] vis = new int[n][m];
+        int count = 0;
         
         for(int i = 0;i < n;i++){
             for(int j = 0;j < m;j++){
@@ -39,6 +29,7 @@ class Solution {
                 }
             }
         }
+        
         return count;
     }
 }
