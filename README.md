@@ -6,6 +6,7 @@ Here are some leetcode problems that I have solved.
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
 ## String
 |  |
@@ -27,4 +28,8 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/utkarshtaneja/LeetCode/tree/master/0547-number-of-provinces) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
