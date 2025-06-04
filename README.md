@@ -15,6 +15,7 @@ Here are some leetcode problems that I have solved.
 ## Depth-First Search
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0547-number-of-provinces](https://github.com/utkarshtaneja/LeetCode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
@@ -23,6 +24,7 @@ Here are some leetcode problems that I have solved.
 ## Breadth-First Search
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0547-number-of-provinces](https://github.com/utkarshtaneja/LeetCode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
@@ -56,4 +58,12 @@ Here are some leetcode problems that I have solved.
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/utkarshtaneja/LeetCode/tree/master/1073-number-of-enclaves) |
+## Tree
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 <!---LeetCode Topics End-->
