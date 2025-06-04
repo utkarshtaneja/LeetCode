@@ -15,6 +15,7 @@ Here are some leetcode problems that I have solved.
 ## Depth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
@@ -25,6 +26,7 @@ Here are some leetcode problems that I have solved.
 ## Breadth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0547-number-of-provinces](https://github.com/utkarshtaneja/LeetCode/tree/master/0547-number-of-provinces) |
@@ -62,11 +64,13 @@ Here are some leetcode problems that I have solved.
 ## Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 <!---LeetCode Topics End-->
