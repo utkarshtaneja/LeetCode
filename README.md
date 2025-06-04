@@ -17,6 +17,7 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
+| [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/utkarshtaneja/LeetCode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/utkarshtaneja/LeetCode/tree/master/0801-is-graph-bipartite) |
@@ -62,8 +63,10 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 <!---LeetCode Topics End-->
