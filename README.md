@@ -54,6 +54,7 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
@@ -84,4 +85,8 @@ Here are some leetcode problems that I have solved.
 | [0104-maximum-depth-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/utkarshtaneja/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+## Two Pointers
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
