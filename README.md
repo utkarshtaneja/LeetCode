@@ -8,6 +8,7 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
+| [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 ## String
 |  |
 | ------- |
@@ -57,6 +58,7 @@ Here are some leetcode problems that I have solved.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
+| [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
@@ -97,4 +99,17 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
+| [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+## Binary Search
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+## Sorting
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
