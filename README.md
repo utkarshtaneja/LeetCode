@@ -57,6 +57,7 @@ Here are some leetcode problems that I have solved.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
+| [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/utkarshtaneja/LeetCode/tree/master/1073-number-of-enclaves) |
@@ -91,6 +92,7 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
+| [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
 ## Math
 |  |
 | ------- |
