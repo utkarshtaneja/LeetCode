@@ -58,6 +58,7 @@ Here are some leetcode problems that I have solved.
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/utkarshtaneja/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/utkarshtaneja/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 ## Matrix
 |  |
 | ------- |
