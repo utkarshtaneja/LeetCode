@@ -3,39 +3,30 @@ class Solution {
         int count0 = 0;
         int count1 = 0;
         int count2 = 0;
-        int n = nums.length;
-        for(int i = 0;i<n;i++){
-            if(nums[i] == 0){
-                count0++;
-            }
-            else if(nums[i] == 1){
-                count1++;
-            }
-            else{
-                count2++;
-            }
+
+        for(int val : nums){
+            if(val == 0) count0++;
+            else if(val == 1) count1++;
+            else count2++;
         }
 
-        
-        int i = 0;
+        int index = 0;
         while(count0 > 0){
-            nums[i] = 0;
-            i++;
+            nums[index] = 0;
             count0--;
+            index++;
         }
+
         while(count1 > 0){
-            nums[i] = 1;
-            i++;
+            nums[index] = 1;
             count1--;
+            index++;
         }
+
         while(count2 > 0){
-            nums[i] = 2;
-            i++;
+            nums[index] = 2;
             count2--;
+            index++;
         }
-        // for(int k = 0;k<n;k++){
-        //     System.out.print(arr[k]+" ");
-        // }
-        System.out.println(Arrays.toString(nums));
     }
 }
