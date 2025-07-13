@@ -59,6 +59,7 @@ Here are some leetcode problems that I have solved.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/utkarshtaneja/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0136-single-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
@@ -135,4 +136,5 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/utkarshtaneja/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 <!---LeetCode Topics End-->
