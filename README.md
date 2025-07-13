@@ -56,6 +56,7 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0136-single-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0136-single-number) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
@@ -95,6 +96,7 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
 ## Math
@@ -114,5 +116,6 @@ Here are some leetcode problems that I have solved.
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
