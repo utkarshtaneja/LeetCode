@@ -7,6 +7,7 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
+| [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 ## String
@@ -59,6 +60,7 @@ Here are some leetcode problems that I have solved.
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0136-single-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0136-single-number) |
+| [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
@@ -117,5 +119,14 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
+| [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
