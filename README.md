@@ -71,6 +71,7 @@ Here are some leetcode problems that I have solved.
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/utkarshtaneja/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/utkarshtaneja/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/utkarshtaneja/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Matrix
 |  |
 | ------- |
@@ -103,6 +104,7 @@ Here are some leetcode problems that I have solved.
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/utkarshtaneja/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Math
 |  |
 | ------- |
@@ -137,4 +139,8 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/utkarshtaneja/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+## Simulation
+|  |
+| ------- |
+| [2271-rearrange-array-elements-by-sign](https://github.com/utkarshtaneja/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 <!---LeetCode Topics End-->
