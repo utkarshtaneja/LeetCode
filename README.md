@@ -59,6 +59,7 @@ Here are some leetcode problems that I have solved.
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/utkarshtaneja/LeetCode/tree/master/0031-next-permutation) |
+| [0048-rotate-image](https://github.com/utkarshtaneja/LeetCode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
 | [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
@@ -78,6 +79,7 @@ Here are some leetcode problems that I have solved.
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/utkarshtaneja/LeetCode/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
@@ -113,6 +115,7 @@ Here are some leetcode problems that I have solved.
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/utkarshtaneja/LeetCode/tree/master/0048-rotate-image) |
 | [0189-rotate-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 ## Binary Search
