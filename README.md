@@ -7,6 +7,7 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
+| [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
@@ -59,6 +60,7 @@ Here are some leetcode problems that I have solved.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/utkarshtaneja/LeetCode/tree/master/0031-next-permutation) |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
+| [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/utkarshtaneja/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
@@ -76,6 +78,7 @@ Here are some leetcode problems that I have solved.
 ## Matrix
 |  |
 | ------- |
+| [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
