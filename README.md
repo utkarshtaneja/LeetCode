@@ -61,6 +61,7 @@ Here are some leetcode problems that I have solved.
 | [0031-next-permutation](https://github.com/utkarshtaneja/LeetCode/tree/master/0031-next-permutation) |
 | [0048-rotate-image](https://github.com/utkarshtaneja/LeetCode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/utkarshtaneja/LeetCode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/utkarshtaneja/LeetCode/tree/master/0075-sort-colors) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/utkarshtaneja/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -80,6 +81,7 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/utkarshtaneja/LeetCode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/utkarshtaneja/LeetCode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0130-surrounded-regions](https://github.com/utkarshtaneja/LeetCode/tree/master/0130-surrounded-regions) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
@@ -150,5 +152,6 @@ Here are some leetcode problems that I have solved.
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/utkarshtaneja/LeetCode/tree/master/0054-spiral-matrix) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/utkarshtaneja/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 <!---LeetCode Topics End-->
