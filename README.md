@@ -11,6 +11,7 @@ Here are some leetcode problems that I have solved.
 | [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+| [0560-subarray-sum-equals-k](https://github.com/utkarshtaneja/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 ## String
 |  |
 | ------- |
@@ -72,6 +73,7 @@ Here are some leetcode problems that I have solved.
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/utkarshtaneja/LeetCode/tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/utkarshtaneja/LeetCode/tree/master/0485-max-consecutive-ones) |
+| [0560-subarray-sum-equals-k](https://github.com/utkarshtaneja/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/utkarshtaneja/LeetCode/tree/master/1073-number-of-enclaves) |
@@ -154,4 +156,8 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0054-spiral-matrix](https://github.com/utkarshtaneja/LeetCode/tree/master/0054-spiral-matrix) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/utkarshtaneja/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
+## Prefix Sum
+|  |
+| ------- |
+| [0560-subarray-sum-equals-k](https://github.com/utkarshtaneja/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 <!---LeetCode Topics End-->
