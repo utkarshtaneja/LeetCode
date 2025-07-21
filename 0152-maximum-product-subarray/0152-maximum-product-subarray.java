@@ -14,17 +14,15 @@ class Solution {
 
         // Optimal
         int n = nums.length;
-        int ans = nums[0];
-        int maxProd = nums[0];
-        int minProd = nums[0];
-
-        for (int i = 1; i < n; i++) {
-            int temp = maxProd;
-            maxProd = Math.max(nums[i], Math.max(maxProd * nums[i], minProd * nums[i]));
-            minProd = Math.min(nums[i], Math.min(temp * nums[i], minProd * nums[i]));
-            ans = Math.max(ans, maxProd);
+        int pre = 1, suff = 1;
+        int ans = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            if (pre == 0) pre = 1;
+            if (suff == 0) suff = 1;
+            pre *= nums[i];
+            suff *= nums[n - i - 1];
+            ans = Math.max(ans, Math.max(pre, suff));
         }
-
         return ans;
     }
 }
