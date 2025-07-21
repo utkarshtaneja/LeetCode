@@ -1,22 +1,30 @@
 class Solution {
     public int maxProduct(int[] nums) {
-        if(nums.length == 1) {
-            return nums[0];
-        }
+        // Brute Force
+        // int n = nums.length;
+        // int ans = Integer.MIN_VALUE;
+        // for (int i = 0;i < n;i++) {
+        //     int prod = 1;
+        //     for (int j = i;j < n;j++) {
+        //         prod *= nums[j];
+        //         ans = Math.max(ans, prod);
+        //     }
+        // }
+        // return ans;
 
+        // Optimal
         int n = nums.length;
-        int max = nums[0];
-        int min = nums[0];
-        int result = nums[0];
+        int ans = nums[0];
+        int maxProd = nums[0];
+        int minProd = nums[0];
 
-        for(int i = 1; i<n; i++) {
-            int val = nums[i];
-            int temp = max;
-            max = Math.max(val, Math.max(nums[i] * max, nums[i] * min) );
-            min = Math.min(val, Math.min(nums[i] * temp, nums[i] * min) );
-            result = Math.max(result, max);
+        for (int i = 1; i < n; i++) {
+            int temp = maxProd;
+            maxProd = Math.max(nums[i], Math.max(maxProd * nums[i], minProd * nums[i]));
+            minProd = Math.min(nums[i], Math.min(temp * nums[i], minProd * nums[i]));
+            ans = Math.max(ans, maxProd);
         }
 
-        return result;
+        return ans;
     }
 }
