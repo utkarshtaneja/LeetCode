@@ -62,6 +62,7 @@ Here are some leetcode problems that I have solved.
 | [0015-3sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/utkarshtaneja/LeetCode/tree/master/0031-next-permutation) |
+| [0035-search-insert-position](https://github.com/utkarshtaneja/LeetCode/tree/master/0035-search-insert-position) |
 | [0048-rotate-image](https://github.com/utkarshtaneja/LeetCode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/utkarshtaneja/LeetCode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/utkarshtaneja/LeetCode/tree/master/0054-spiral-matrix) |
@@ -135,6 +136,7 @@ Here are some leetcode problems that I have solved.
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/utkarshtaneja/LeetCode/tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
 | [0493-reverse-pairs](https://github.com/utkarshtaneja/LeetCode/tree/master/0493-reverse-pairs) |
 ## Bit Manipulation
