@@ -36,7 +36,6 @@ class Solution {
         int ans = Integer.MAX_VALUE;
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            int requiredTime = getRequiredTime(piles, mid);
 
             if (isPossible(piles, mid, h)) {
                 ans = mid;
