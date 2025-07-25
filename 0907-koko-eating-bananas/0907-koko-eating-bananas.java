@@ -6,6 +6,11 @@ class Solution {
         }
         return time;
     }
+    public static boolean isPossible(int[] piles, int k, int h) {
+        int requiredTime = getRequiredTime(piles, k);
+        if (requiredTime <= h) return true;
+        return false;
+    }
     public int minEatingSpeed(int[] piles, int h) {
         // Brute Force
         // int maxPile = 0;
@@ -33,7 +38,7 @@ class Solution {
             int mid = low + (high - low) / 2;
             int requiredTime = getRequiredTime(piles, mid);
 
-            if (requiredTime <= h) {
+            if (isPossible(piles, mid, h)) {
                 ans = mid;
                 high = mid - 1;
             }
