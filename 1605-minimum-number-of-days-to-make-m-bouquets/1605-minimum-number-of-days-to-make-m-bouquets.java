@@ -1,50 +1,61 @@
 class Solution {
-    public static boolean isPossible(int val,int[] bloomDay,int m,int k){
-        int n = bloomDay.length;
+    public static boolean isPossible(int[] arr, int day, int m, int k) {
         int count = 0;
-        int ans = 0;
-        for(int i = 0;i<n;i++){
-            if(bloomDay[i] <= val){
-                count++;
-            }
-            else{
-                ans = ans + (count/k);
+        int noOfB = 0;
+
+        for (int i = 0;i < arr.length;i++) {
+            if (arr[i] <= day) count++;
+            else {
+                noOfB += (count / k);
                 count = 0;
             }
         }
-        ans = ans + (count/k);
-        if(ans >= m){
-            return true;
-        }
-        else{
-            return false;
-        }
+
+        noOfB += (count / k);
+        if (noOfB >= m) return true;
+        return false;
     }
     public int minDays(int[] bloomDay, int m, int k) {
-        long val = (long) m * k;
-        int n = bloomDay.length; 
-        if (val > n){
-            return -1;
+        // Brute Force
+        // int mini = Integer.MAX_VALUE;
+        // int maxi = Integer.MIN_VALUE;
+
+        // for (int val : bloomDay) {
+        //     maxi = Math.max(maxi, val);
+        //     mini = Math.min(mini, val);
+        // }
+
+        // if ((long) m * k > bloomDay.length) return -1;
+        // for (int i = mini;i <= maxi;i++) {
+        //     if (isPossible(bloomDay, i, m, k)) {
+        //         return i;
+        //     }
+        // }
+        // return -1;
+
+
+        // Optimal
+        if ((long) m * k > bloomDay.length) return -1;
+        int low = Integer.MAX_VALUE;
+        int high = Integer.MIN_VALUE;
+
+        for (int val : bloomDay) {
+            high = Math.max(high, val);
+            low = Math.min(low, val);
         }
         
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < n; i++) {
-            min = Math.min(min, bloomDay[i]);
-            max = Math.max(max, bloomDay[i]);
-        }
+        int ans = high;
 
-        int low = min;
-        int high = max;
         while (low <= high) {
-            int mid = (low + high) / 2;
-            if(isPossible(mid, bloomDay, m, k)) {
+            int mid = low + (high - low) / 2;
+            if (isPossible(bloomDay, mid, m, k)) {
+                ans = mid;
                 high = mid - 1;
-            } 
+            }
             else {
                 low = mid + 1;
             }
         }
-        return low;
+        return ans;
     }
 }
