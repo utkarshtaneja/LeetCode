@@ -1,32 +1,49 @@
 class Solution {
-    public static int findmax(int[] nums){
-        int max = 0;
-        for(int i = 0;i<nums.length;i++){
-            max = Math.max(max,nums[i]);
+    public static boolean isPossible(int[] arr, int divisor, int threshold) {
+        int n = arr.length;
+        int sum = 0;
+
+        for (int i = 0;i < n;i++) {
+            int value = (arr[i] + divisor - 1) / divisor;
+            sum += value;
         }
-        return max;
-    }
-    public static boolean isPossible(int[] nums,int divisor,int threshold){
-        long sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            sum += Math.ceil((double) nums[i] / (double)divisor);
-        }
-        return sum <= threshold;
+
+        if (sum <= threshold) return true;
+        return false;
     }
     public int smallestDivisor(int[] nums, int threshold) {
+        // Brute Force
+        // int maxi = Integer.MIN_VALUE;
+        // int mini = 1;
 
+        // for (int val : nums) {
+        //     maxi = Math.max(maxi, val);
+        // }
+
+        // for (int i = mini;i <= maxi;i++) {
+        //     if (isPossible(nums, i, threshold)) return i;
+        // }
+        // return -1;
+
+        // Optimal
         int low = 1;
-        int high = findmax(nums);
+        int high = Integer.MIN_VALUE;
 
-        while(low <= high){
+        for (int val : nums) {
+            high = Math.max(high, val);
+        }
+
+        int ans = -1;
+        while (low <= high) {
             int mid = low + (high - low) / 2;
-            if(isPossible(nums,mid,threshold)){
+            if (isPossible(nums, mid, threshold)) {
+                ans = mid;
                 high = mid - 1;
             }
-            else{
+            else {
                 low = mid + 1;
             }
         }
-        return low;
+        return ans;
     }
 }
