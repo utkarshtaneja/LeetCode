@@ -1,38 +1,61 @@
 class Solution {
-    public static int countPartitions(int[] nums, int maxSum) {
-        int n = nums.length; 
-        int partitions = 1;
-        long subarraySum = 0;
-        for (int i = 0; i < n; i++) {
-            if(subarraySum + nums[i] <= maxSum){
-                subarraySum += nums[i];
-            } 
-            else{
-                partitions++;
-                subarraySum = nums[i];
-            }
-        }
-        return partitions;
-    }
-    public int splitArray(int[] nums, int k) {
-        int low = Integer.MIN_VALUE;
-        int high = 0;
+    public static int getPaintersRequired(int[] nums, int maxLengthPerPainter) {
+        int painters = 1;
+        int currentSum = 0;
 
-        for(int i = 0; i < nums.length; i++) {
-            low = Math.max(low, nums[i]);
-            high += nums[i];
-        }
-
-        while (low <= high) {
-            int mid = (low + high) / 2;
-            int partitions = countPartitions(nums, mid);
-            if(partitions > k) {
-                low = mid + 1;
+        for (int i = 0; i < nums.length; i++) {
+            if (currentSum + nums[i] <= maxLengthPerPainter) {
+                currentSum += nums[i];
             } 
             else {
-                high = mid - 1;
+                painters++;
+                currentSum = nums[i];
             }
         }
-        return low;
+        return painters;
+    }
+    public int splitArray(int[] nums, int k) {
+        // Brute Force
+        
+        // if (k > nums.length) return -1;
+
+        // int low = Integer.MIN_VALUE;
+        // int high = 0;
+        
+        // for (int val : nums) {
+        //     low = Math.max(low, val);
+        //     high += val;
+        // }
+        
+        // for (int i = low;i <= high;i++) {
+        //     int count = getPaintersRequired(nums, i);
+        //     if (count <= k) return i;
+        // }
+        // return -1;
+        
+        // Optimal
+        if (k > nums.length) return -1;
+
+        int low = Integer.MIN_VALUE;
+        int high = 0;
+        
+        for (int val : nums) {
+            low = Math.max(low, val);
+            high += val;
+        }
+        
+        int ans = -1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            int count = getPaintersRequired(nums, mid);
+            if (count <= k) {
+                ans = mid;
+                high = mid - 1;
+            }
+            else{
+                low = mid + 1;
+            }
+        }
+        return ans;
     }
 }
