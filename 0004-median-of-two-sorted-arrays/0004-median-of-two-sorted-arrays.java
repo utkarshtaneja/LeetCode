@@ -1,52 +1,41 @@
 class Solution {
-    public static int[] merge(int[] nums1, int[] nums2){
-        int[] merged = new int[nums1.length + nums2.length];
-        
-        int i = 0;  
-        int j = 0;  
-        int k = 0;
-        
-        while(i != nums1.length && j != nums2.length){
-            if(nums1[i] < nums2[j]){
-                merged[k] = nums1[i];
-                k++;
-                i++;
-            }
-            else{
-                merged[k] = nums2[j];
-                k++;
-                j++;
+    public static int[] combine(int[] nums1, int[] nums2, int n1, int n2) {
+        int i = 0, j = 0, k = 0;
+        int[] merged = new int[n1 + n2];
+
+        while (i < n1 && j < n2) {
+            if (nums1[i] < nums2[j]) {
+                merged[k++] = nums1[i++];
+            } else {
+                merged[k++] = nums2[j++];
             }
         }
-        
-        while(i != nums1.length){
-            merged[k] = nums1[i];
-            k++;
-            i++;
+
+        while (i < n1) {
+            merged[k++] = nums1[i++];
         }
-        
-        while(j != nums2.length){
-            merged[k] = nums2[j];
-            k++;
-            j++;
+
+        while (j < n2) {
+            merged[k++] = nums2[j++];
         }
-        
+
         return merged;
     }
+
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        double ans = 0;
-        int[] merged = merge(nums1, nums2);
-        int n = merged.length;
-        
-        if(n % 2 == 0){
-            int low = (n - 1) / 2;
-            int high = n / 2;
-            
-            return (double)( (merged[low] + merged[high]) / 2.0 );
-        }
-        else{
-            int mid = (n - 1) / 2;
-            return (double)(merged[mid]);
+        int n1 = nums1.length;   
+        int n2 = nums2.length; 
+
+        int[] combined = combine(nums1, nums2, n1, n2);
+        int totalLength = n1 + n2;
+
+        if (totalLength % 2 == 1) {
+            return (double) combined[totalLength / 2];
+        } 
+        else {
+            int mid1 = combined[totalLength / 2 - 1];
+            int mid2 = combined[totalLength / 2];
+            return (mid1 + mid2) / 2.0;
         }
     }
 }
