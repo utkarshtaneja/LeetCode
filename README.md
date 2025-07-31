@@ -102,6 +102,7 @@ Here are some leetcode problems that I have solved.
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/utkarshtaneja/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/utkarshtaneja/LeetCode/tree/master/1646-kth-missing-positive-number) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/utkarshtaneja/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [2047-find-a-peak-element-ii](https://github.com/utkarshtaneja/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/utkarshtaneja/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Matrix
 |  |
@@ -115,6 +116,7 @@ Here are some leetcode problems that I have solved.
 | [0733-flood-fill](https://github.com/utkarshtaneja/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/utkarshtaneja/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/utkarshtaneja/LeetCode/tree/master/1073-number-of-enclaves) |
+| [2047-find-a-peak-element-ii](https://github.com/utkarshtaneja/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 ## Tree
 |  |
 | ------- |
@@ -171,6 +173,7 @@ Here are some leetcode problems that I have solved.
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/utkarshtaneja/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/utkarshtaneja/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/utkarshtaneja/LeetCode/tree/master/1646-kth-missing-positive-number) |
+| [2047-find-a-peak-element-ii](https://github.com/utkarshtaneja/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
