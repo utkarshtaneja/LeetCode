@@ -17,6 +17,7 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
+| [1078-remove-outermost-parentheses](https://github.com/utkarshtaneja/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -240,4 +241,8 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0410-split-array-largest-sum) |
+## Stack
+|  |
+| ------- |
+| [1078-remove-outermost-parentheses](https://github.com/utkarshtaneja/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 <!---LeetCode Topics End-->
