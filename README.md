@@ -13,6 +13,7 @@ Here are some leetcode problems that I have solved.
 | [0229-majority-element-ii](https://github.com/utkarshtaneja/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/utkarshtaneja/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+| [0451-sort-characters-by-frequency](https://github.com/utkarshtaneja/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [0560-subarray-sum-equals-k](https://github.com/utkarshtaneja/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 ## String
 |  |
@@ -21,6 +22,7 @@ Here are some leetcode problems that I have solved.
 | [0151-reverse-words-in-a-string](https://github.com/utkarshtaneja/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/utkarshtaneja/LeetCode/tree/master/0242-valid-anagram) |
+| [0451-sort-characters-by-frequency](https://github.com/utkarshtaneja/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [0812-rotate-string](https://github.com/utkarshtaneja/LeetCode/tree/master/0812-rotate-string) |
 | [1078-remove-outermost-parentheses](https://github.com/utkarshtaneja/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 ## Depth-First Search
@@ -198,6 +200,7 @@ Here are some leetcode problems that I have solved.
 | [0229-majority-element-ii](https://github.com/utkarshtaneja/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/utkarshtaneja/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/utkarshtaneja/LeetCode/tree/master/0268-missing-number) |
+| [0451-sort-characters-by-frequency](https://github.com/utkarshtaneja/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -211,6 +214,7 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0169-majority-element](https://github.com/utkarshtaneja/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/utkarshtaneja/LeetCode/tree/master/0229-majority-element-ii) |
+| [0451-sort-characters-by-frequency](https://github.com/utkarshtaneja/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -261,4 +265,12 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [0812-rotate-string](https://github.com/utkarshtaneja/LeetCode/tree/master/0812-rotate-string) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0451-sort-characters-by-frequency](https://github.com/utkarshtaneja/LeetCode/tree/master/0451-sort-characters-by-frequency) |
+## Bucket Sort
+|  |
+| ------- |
+| [0451-sort-characters-by-frequency](https://github.com/utkarshtaneja/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 <!---LeetCode Topics End-->
