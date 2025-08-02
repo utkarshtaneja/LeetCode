@@ -16,6 +16,7 @@ Here are some leetcode problems that I have solved.
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/utkarshtaneja/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0151-reverse-words-in-a-string](https://github.com/utkarshtaneja/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/utkarshtaneja/LeetCode/tree/master/0205-isomorphic-strings) |
 | [1078-remove-outermost-parentheses](https://github.com/utkarshtaneja/LeetCode/tree/master/1078-remove-outermost-parentheses) |
@@ -62,6 +63,7 @@ Here are some leetcode problems that I have solved.
 | ------- |
 | [0001-two-sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/utkarshtaneja/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
+| [0014-longest-common-prefix](https://github.com/utkarshtaneja/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/utkarshtaneja/LeetCode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/utkarshtaneja/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/utkarshtaneja/LeetCode/tree/master/0031-next-permutation) |
@@ -247,4 +249,8 @@ Here are some leetcode problems that I have solved.
 |  |
 | ------- |
 | [1078-remove-outermost-parentheses](https://github.com/utkarshtaneja/LeetCode/tree/master/1078-remove-outermost-parentheses) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/utkarshtaneja/LeetCode/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
