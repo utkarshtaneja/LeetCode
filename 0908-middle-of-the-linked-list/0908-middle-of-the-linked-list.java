@@ -10,34 +10,11 @@
  */
 class Solution {
     public ListNode middleNode(ListNode head) {
-        // Brute Force Method
-        // if(head == null){
-        //     return null;
-        // }
-        // int count = 0;
-        // ListNode temp = head;
-
-        // while(temp != null){
-        //     temp = temp.next;
-        //     count++;
-        // }
-
-        // temp = head; 
-    	// for(int i = 0; i < count/2; i++) {
-        // 	temp = temp.next;
-    	// }
-
-        // return temp;
-
-        // Optimal Approach
-        if(head == null){
-            return null;
-        }
-
+        if (head == null || head.next == null) return head;
         ListNode slow = head;
         ListNode fast = head;
 
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
