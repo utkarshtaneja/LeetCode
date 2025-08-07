@@ -11,38 +11,25 @@
  */
 public class Solution {
     public ListNode detectCycle(ListNode head) {
-        // Brute Force Method
-        // Set<ListNode> set = new HashSet<>();
-        // while(head != null){
-        //     if(set.contains(head)){
-        //         return head;
-        //     }
-        //     set.add(head);
-        //     head = head.next;
-        // }
-        // return null;
+        if (head == null || head.next == null) return null;
 
-
-        // Optimal Approach
-        if(head == null || head.next == null){
-            return null;
-        }
-        
         ListNode slow = head;
         ListNode fast = head;
-        ListNode entry = head;
 
-        while(fast != null && fast.next != null){
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
-            if(slow == fast){
-                while(slow != entry){
-                    slow = slow.next;
+
+            if (slow == fast) {
+                ListNode entry = head;
+                while (entry != slow) {
                     entry = entry.next;
+                    slow = slow.next;
                 }
                 return entry;
             }
         }
-        return null;   
+
+        return null;
     }
 }
