@@ -45,43 +45,21 @@ public class Solution {
         int l1 = length(headA);
         int l2 = length(headB);
 
-        if (l1 > l2) {
-            l1 = l1 - l2;
-
-            ListNode curr1 = headA;
-            ListNode curr2 = headB;
-
-            while (l1 > 0) {
-                curr1 = curr1.next;
-                l1--;
-            }
-
-            while (curr1 != null && curr2 != null) {
-                if (curr1 == curr2) return curr1;
-                curr1 = curr1.next;
-                curr2 = curr2.next;
-            }
-
-            return null;
+        while (l1 > l2) {
+            headA = headA.next;
+            l1--;
         }
-        else {
-            l2 = l2 - l1;
-
-            ListNode curr1 = headA;
-            ListNode curr2 = headB;
-
-            while (l2 > 0) {
-                curr2 = curr2.next;
-                l2--;
-            }
-
-            while (curr1 != null && curr2 != null) {
-                if (curr1 == curr2) return curr1;
-                curr1 = curr1.next;
-                curr2 = curr2.next;
-            }
-
-            return null;
+        while (l2 > l1) {
+            headB = headB.next;
+            l2--;
         }
+
+        while (headA != null && headB != null) {
+            if (headA == headB) return headA; 
+            headA = headA.next;
+            headB = headB.next;
+        }
+
+        return null;
     }
 }
