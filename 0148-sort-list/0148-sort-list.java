@@ -10,27 +10,24 @@
  */
 class Solution {
     public ListNode sortList(ListNode head) {
-        // Brute Force Method
-        int size = 0;
-        ListNode temp = head;
-        while(temp != null){
-            size++;
-            temp = temp.next;
+        List<Integer> list = new ArrayList<>();
+        ListNode curr = head;
+
+        while (curr != null) {
+            list.add(curr.val);
+            curr = curr.next;
         }
-        int[] arr = new int[size];
-        temp = head;
+
+        curr = head;
+        Collections.sort(list);
         int index = 0;
-        while(temp != null){
-            arr[index] = temp.val;
+
+        while (curr != null) {
+            curr.val = list.get(index);
+            curr = curr.next;
             index++;
-            temp = temp.next;
         }
-        Arrays.sort(arr);
-        temp = head;
-        for(int i = 0;i<arr.length;i++){
-            temp.val = arr[i];
-            temp = temp.next;
-        }
+
         return head;
     }
 }
