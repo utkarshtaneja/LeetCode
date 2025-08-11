@@ -8,91 +8,52 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
- 
-// Brute Force Method
-// class Solution {
-//     public static int length(ListNode head){
-//         int count = 0;
-//         while(head != null){
-//             count++;
-//             head = head.next;
-//         }
-//         return count;
-//     }
-//     public static void reverse(int s,int e,int[] arr){
-//         while(s <= e){
-//             int temp = arr[s];
-//             arr[s] = arr[e];
-//             arr[e] = temp;
-//             s++;
-//             e--;
-//         }
-//     }
-//     public ListNode reverseKGroup(ListNode head, int k) {
-//         int l = length(head);
-//         ListNode temp = head;
-//         int[] arr = new int[l];
-//         for(int i = 0;i<l;i++){
-//             arr[i] = temp.val;
-//             temp = temp.next;
-//         }
-//         int s = 0;
-//         int e = k-1;
-//         while(e < l){
-//             reverse(s,e,arr);
-//             s = e + 1;
-//             e = s + k - 1;
-            
-//         }
-//         temp = head;
-//         int index = 0;
-//         while(temp != null){
-//             temp.val = arr[index];
-//             index++;
-//             temp = temp.next;
-//         }
-//         return head;
-//     }
-// }
-
-
-// Optimal Approach
 class Solution {
-    public static int length(ListNode head){
-        int count = 0;
-        while(head != null){
-            count++;
-            head = head.next;
+    public static ListNode reverse(ListNode head, ListNode tail) {
+        ListNode curr = head;
+        ListNode prev = null;
+
+        while (curr != tail) {
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
         }
-        return count;
+
+        return prev;
+    }
+    public static ListNode getKthNode(ListNode temp, int k) {
+        k--;
+        while (temp != null && k > 0) {
+            k--;
+            temp = temp.next;
+        }
+        return temp;
     }
     public ListNode reverseKGroup(ListNode head, int k) {
-        if(head == null || k == 1){
-            return head;
-        }
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode curr = dummy;
-        ListNode nex = curr;
-        ListNode prev = dummy;
-        int count = 0;
-        while(curr.next != null){
-            count++;
-            curr = curr.next;
-        }
-        while(count >= k){
-            curr = prev.next;
-            nex = curr.next;
-            for(int i = 1;i<k;i++){
-                curr.next = nex.next;
-                nex.next = prev.next;
-                prev.next = nex;
-                nex = curr.next;
+        ListNode temp = head;
+        ListNode prev = null;
+
+        while (temp != null) {
+            ListNode kth = getKthNode(temp, k);
+            if (kth == null) {
+                if (prev != null) {
+                    prev.next = temp;
+                }
+                break;
             }
-            prev = curr;
-            count = count - k;
+            ListNode nextNode = kth.next;
+            ListNode newHead  = reverse(temp, nextNode);
+            if (temp == head) {
+                head = newHead;
+            }
+            else {
+                prev.next = newHead;
+            }
+            prev = temp;
+            temp = nextNode;
         }
-        return dummy.next;
+
+        return head;
     }
 }
